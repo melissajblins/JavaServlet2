@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>gerenciador</display-name>
+  <welcome-file-list>
+    <welcome-file>bem-vindo.html</welcome-file>
+  </welcome-file-list>
+  
+  <filter>
+  	<filter-name>MF</filter-name>
+    <filter-class>gerenciador.servlet.MonitoramentoFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>MF</filter-name>
+    <url-pattern>/entrada</url-pattern>
+   </filter-mapping>
+  
+  <filter>
+    <filter-name>AF</filter-name>
+    <filter-class>gerenciador.servlet.AutorizacaoFilter</filter-class>
+   </filter>
+   
+   <filter-mapping>
+    <filter-name>AF</filter-name>
+    <url-pattern>/entrada</url-pattern> 
+   </filter-mapping>
+   
+   <filter>
+    <filter-name>CF</filter-name>
+    <filter-class>gerenciador.servlet.ControladorFilter</filter-class>
+  </filter>
+	
+	<filter-mapping>
+    	<filter-name>CF</filter-name>
+    	<url-pattern>/entrada</url-pattern>
+	</filter-mapping>
+   
+</web-app>
