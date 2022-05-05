@@ -12,7 +12,7 @@ Dando continuidade ao arquivo Servlet1, esta aplicação, além de cadastrar e l
 * Redirecionamento centralizado
 * Diretório WEB-INF
 * API de Reflexão
-* Padrãp MVC
+* Padrão MVC
 * Design Pattern Command
 * Autenticação e autorização
 * Padrão JAAS
